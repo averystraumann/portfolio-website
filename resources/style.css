@@ -21,10 +21,22 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
 a {
   color: #ffffe1;
 }
 
+p {
+  line-height: 1.5rem;
+}
 .nav-bar {
   word-spacing: 5px;
   font-size: 1.25rem;
@@ -34,7 +46,8 @@ a {
   display: inline;
 }
 
-.links {
+.links,
+.project-categories {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -52,6 +65,22 @@ a {
   border-radius: 10px;
 }
 
+.project {
+  line-height: 1rem;
+  border: 2px solid #759aab;
+  border-radius: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 0;
+}
+
+.project-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4%;
+}
+
 #linkedin {
   background-color: #759aab;
 }
@@ -61,4 +90,24 @@ a {
 
 #contact {
   background-color: #e5446d;
+}
+
+#gamedev {
+  background-color: #759aab;
+}
+
+#graphics {
+  background-color: #ef946c;
+}
+
+#other {
+  background-color: #e5446d;
+}
+
+#jump {
+  text-align: center;
+}
+
+.gamedev h2 {
+  color: #759aab;
 }
