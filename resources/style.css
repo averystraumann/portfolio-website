@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.nav-bar {
+  word-spacing: 5px;
+}
+
+.nav-element {
+  display: inline;
+}
