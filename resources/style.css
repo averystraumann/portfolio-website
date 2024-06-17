@@ -1,8 +1,10 @@
 body {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
   font-size: 16px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #333232;
+  color: #ffffe1;
 }
 
 header {
@@ -13,6 +15,14 @@ header {
 
 h1 {
   font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  color: #ffffe1;
 }
 
 .nav-bar {
@@ -40,5 +50,15 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  border: solid 2px blueviolet;
+}
+
+#linkedin {
+  background-color: #759aab;
+}
+#github {
+  background-color: #ef946c;
+}
+
+#contact {
+  background-color: #e5446d;
 }
