@@ -1,7 +1,7 @@
 body {
   margin-left: 7%;
   margin-right: 7%;
-  font-size: 16px;
+  font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: #333232;
   color: #ffffe1;
@@ -53,6 +53,7 @@ p {
   align-items: start;
   height: 100%;
   width: 100%;
+  text-align: center;
 }
 
 .link-container {
@@ -63,15 +64,22 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  overflow: auto;
 }
 
 .project {
-  line-height: 1rem;
-  border: 2px solid #759aab;
+  border: 3px solid #759aab;
   border-radius: 10px;
   padding-left: 2%;
   padding-right: 2%;
   margin-bottom: 0;
+}
+
+.project-category-header {
+  display: flex;
+  justify-content: start;
+  gap: 4%;
+  align-items: center;
 }
 
 .project-header {
@@ -79,6 +87,11 @@ p {
   justify-content: start;
   align-items: center;
   gap: 4%;
+}
+
+.project img {
+  padding-left: 20%;
+  padding-bottom: 5%;
 }
 
 #linkedin {
@@ -92,15 +105,15 @@ p {
   background-color: #e5446d;
 }
 
-#gamedev {
+#gamedev-link {
   background-color: #759aab;
 }
 
-#graphics {
+#graphics-link {
   background-color: #ef946c;
 }
 
-#other {
+#other-link {
   background-color: #e5446d;
 }
 
@@ -110,4 +123,11 @@ p {
 
 .gamedev h2 {
   color: #759aab;
+}
+
+.graphics h2 {
+  color: #ef946c;
+}
+.other h2 {
+  color: #e5446d;
 }

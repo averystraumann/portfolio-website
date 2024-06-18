@@ -6,12 +6,12 @@
   </head>
   <body>
     <header>
-      <h1>Projects</h1>
+      <h1 id="top">Projects</h1>
       <nav>
         <ol class="nav-bar">
           <a href="home.html"><li class="nav-element">Home</li></a>
           <a href="projects.html"><li class="nav-element">Projects</li></a>
-          <a href="#"><li class="nav-element">Education</li></a>
+          <a href="#"><li class="nav-element">Education & Experience</li></a>
           <a href="#"><li class="nav-element">Misc</li></a>
         </ol>
       </nav>
@@ -20,19 +20,25 @@
     <main>
       <h3 id="jump">Jump to a category!</h3>
       <div class="project-categories">
-        <div class="link-container" id="gamedev">
+        <div class="link-container" id="gamedev-link">
           <a href="#gamedev">Game Development </a>
         </div>
-        <div class="link-container" id="graphics">
+        <div class="link-container" id="graphics-link">
           <a href="#graphics">Computer Graphics </a>
         </div>
-        <div class="link-container" id="other">
+        <div class="link-container" id="other-link">
           <a href="#other"> Other </a>
         </div>
       </div>
 
-      <div class="gamedev">
-        <h2>Game Development</h2>
+      <div class="gamedev" id="gamedev">
+        <div class="project-category-header">
+          <h2>Game Development</h2>
+          <h4>
+            <a href=#">Back to top</a>
+          </h4>
+        </div>
+
         <div class="project" id="yggdrowsil">
           <div class="project-header">
             <h3>YGGDROWSIL</h3>
@@ -49,20 +55,134 @@
           <p>
             Over 10 weeks, my team and I made a game prototype which included
             synchronous online multiplayer, artificial intelligence, and 10
-            minutes of gameplay. My contributions as a programer included
+            minutes of gameplay. My contributions as a programmer included
             setting up the audio system, creating enemy attacks, making the
             interactable object system, the settings/menu screens, adding
             special abilities for the players, and using NetCode to sync the
             level and ability selection between the two players.
           </p>
+          <img
+            src="resources/images/Screenshot 2024-04-17 121148.png"
+            height="40%"
+            width="60%"
+          />
+          <h4 style="text-align: center; font-size: larger; padding-bottom: 2%">
+            Check the full project out
+            <a
+              href="https://marcello-catalfamo.itch.io/yggdrowsil"
+              target="_blank"
+              >here!</a
+            >
+          </h4>
+        </div>
+        <br />
+        <div class="project" id="brazen-bull">
+          <div class="project-header">
+            <h3>BRAZEN BULL</h3>
+            <h4>Tech Used: Unity 3D, C#, Git, Github Projects</h4>
+          </div>
+          <h4>
+            Made for the
+            <a href="https://itch.io/jam/mcgamejam-2024" target="_blank"
+              >2024 McGill Game Jam</a
+            >
+          </h4>
+          <p>
+            In 46 hours my team and I managed an agile development process to
+            create a labrynth/puzzle game experience. My contributions included
+            designing and implementing the UI, creating prefabs to efficiently
+            manage the puzzle-triggered actions in game, and making an effective
+            audio system.
+          </p>
+          <img src="resources/images/bb.png" height="40%" width="60%" />
+          <h4 style="text-align: center; padding-bottom: 2%">
+            Awards: Best Art
+          </h4>
+          <h4 style="text-align: center; font-size: larger; padding-bottom: 2%">
+            Check the full project out
+            <a
+              href="https://marcello-catalfamo.itch.io/brazen-bull"
+              target="_blank"
+              >here!</a
+            >
+          </h4>
+        </div>
+        <br>
+        <div class="project" id="space-racer">
+        <div class="project-header">
+            <h3>SPACE RACER</h3>
+            <h4>Tech Used: Unity 3D, C#, Git, Aseprite</h4>
+          </div>
+          <p>
+            My first Unity project! Taught myself C# and the Unity engine in general. 
+            This was a solo project where I created a 2D platformer, and designed every aspect of the game such as UI, art, level design, player controls, etc.  
+          </p>
+          <img src="resources/images/spr.png" height="40%" width="60%" />
+          <h4 style="text-align: center; font-size: larger; padding-bottom: 2%">
+            <a
+              href=https://github.com/averystraumann/spaceracer"
+              target="_blank"
+              >Source Code + Download</a
+            >
+          </h4>
+        </div>
+        <div class="project" id="crystal-craft">
+          <div class="project-header">
+            <h3>CRYSTALCRAFT</h3>
+            <h4>Tech Used: Java, Git, Gradle, Mojang API</h4>
+          </div>
+          <h4>
+            Minecraft Mod
+          </h4>
+          <p>
+           Created a fully automated pipeline to create 200+ scripts that added new features to the game Minecraft. Received 200+ downloads. 
+          </p>
+          <img
+            src="resources/images/cc.png"
+            height="40%"
+            width="60%"
+          />
+          <h4 style="text-align: center; font-size: larger; padding-bottom: 2%">
+            Check the full project out
+            <a
+              href="https://www.curseforge.com/minecraft/mc-mods/crystalcraft-by-avery"
+              target="_blank"
+              >here!</a
+            >
+          </h4>
+          <h4 style="text-align: center; font-size: larger; padding-bottom: 2%">
+            <a
+              href="https://github.com/averystraumann/crystalcraft?tab=readme-ov-file"
+              target="_blank"
+              >Source Code</a
+            >
+          </h4>
         </div>
       </div>
+      <br>
+    
+  
+      <div class="graphics" id="graphics">
+        <div class="project-category-header">
+          <h2>Graphics</h2>
+          <h4>
+            <a href="#">Back to top</a>
+          </h4>
+        </div>
 
-      <div class="graphics">
-        <h2>Computer Graphics</h2>
+        
       </div>
-      <div class="other">
-        <h2>Other Projects</h2>
+
+
+
+
+      <div class="other" id="other">
+        <div class="project-category-header">
+          <h2>Other Projects</h2>
+          <h4>
+            <a href="#">Back to top</a>
+          </h4>
+        </div>
       </div>
     </main>
   </body>
