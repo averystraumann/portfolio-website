@@ -83,6 +83,14 @@ p {
   margin-bottom: 0;
 }
 
+.other .project {
+  border: 3px solid #e5446d;
+  border-radius: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 0;
+}
+
 .project-category-header {
   display: flex;
   justify-content: start;
