@@ -67,8 +67,16 @@ p {
   overflow: auto;
 }
 
-.project {
+.gamedev .project {
   border: 3px solid #759aab;
+  border-radius: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 0;
+}
+
+.graphics .project {
+  border: 3px solid #ef946c;
   border-radius: 10px;
   padding-left: 2%;
   padding-right: 2%;
@@ -92,6 +100,12 @@ p {
 .project img {
   padding-left: 20%;
   padding-bottom: 5%;
+}
+
+.project video {
+  padding-left: 35%;
+  padding-bottom: 5%;
+  padding-top: 1%;
 }
 
 #linkedin {
