@@ -108,6 +108,22 @@ p {
   padding-top: 1%;
 }
 
+.fractal-images-container {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+
+.fractal-image {
+  width: 45%;
+  height: 40%;
+  text-align: center;
+}
+.fractal-image img {
+  padding-left: 0%;
+  padding-bottom: 0%;
+}
+
 #linkedin {
   background-color: #759aab;
 }

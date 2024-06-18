@@ -200,10 +200,74 @@
           <h4 style="text-align: center; font-size: larger; padding-bottom: 2%">
             Check out the full project
             <a
-              src="https://github.com/averystraumann/fluid-sim"
+              href="https://github.com/averystraumann/fluid-sim"
               target="_blank"
             >
               here!
+            </a>
+          </h4>
+        </div>
+
+        <br />
+        <div class="project" id="fractals">
+          <div class="project-header">
+            <h3>FRACTAL GENERATORS</h3>
+            <h4>Tech Used: Java, Processing, Git</h4>
+          </div>
+          <p>
+            I created two fractal generators, one for the
+            <a href="https://en.wikipedia.org/wiki/Julia_set" target="_blank"
+              >Julia Set</a
+            >
+            and one for the
+            <a
+              href="https://en.wikipedia.org/wiki/Mandelbrot_set"
+              target="_blank"
+              >Mandelbrot Set</a
+            >. The Julia set takes 2 float arguments between -1 and 1, the first
+            argument being the real component of the input and the second number
+            being the imaginary compnent. As for the Mandelbrot set, we can
+            alter 4 inputs to change the region of the complex plane we use for
+            the calculations of the fractal. It's really interesting, because
+            the Julia set is essentially just a zoomed in version of Mandelbrot,
+            i.e. the Mandelbrot is essentailly a map of all possible Julia sets
+            on the complex plane! To make the generated fractals more visually
+            interesting I also created a color mapping function to better
+            understand the number convergence and divergence in these sets.
+          </p>
+
+          <div class="fractal-images-container">
+            <div class="fractal-image">
+              <img src="resources/images/julia.png" height="60%" width="100%" />
+              <h6>Julia Set with the equation -0.8 + 0.156i</h6>
+            </div>
+            <div class="fractal-image">
+              <img
+                src="resources/images/mandelbrot.png"
+                height="60%"
+                width="100%"
+              />
+              <h6>
+                Mandelbrot Set with the coordinates -1.019741354, -1.013877846,
+                -0.325120847, -0.322189093
+              </h6>
+            </div>
+          </div>
+
+          <h4 style="text-align: center; font-size: larger; padding-bottom: 2%">
+            <a
+              href="https://github.com/averystraumann/generative-art/blob/main/juliaset/demo.md"
+              target="_blank"
+            >
+              Julia Set Source Code
+            </a>
+          </h4>
+          <h4 style="text-align: center; font-size: larger; padding-bottom: 2%">
+            <a
+              href="https://github.com/averystraumann/generative-art/blob/main/mandelbrot/demo.md"
+              target="_blank"
+            >
+              Mandelbrot Set Source Code
             </a>
           </h4>
         </div>
