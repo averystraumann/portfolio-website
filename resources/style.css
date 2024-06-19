@@ -48,8 +48,9 @@ p {
 
 .about {
   display: flex;
-  align-items: top;
+  align-items: center;
   gap: 2%;
+  margin-bottom: 2%;
 }
 
 .about-info {
@@ -77,6 +78,22 @@ p {
   align-items: center;
   border-radius: 10px;
   overflow: auto;
+}
+
+.skills {
+  display: flex;
+  gap: 4%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills img {
+  width: 80px;
+  height: 80px;
+}
+
+.skill-container {
+  text-align: center;
 }
 
 .gamedev .project {
