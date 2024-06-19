@@ -46,6 +46,18 @@ p {
   display: inline;
 }
 
+.about {
+  display: flex;
+  align-items: top;
+  gap: 2%;
+}
+
+.about-info {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
 .links,
 .project-categories {
   display: flex;
