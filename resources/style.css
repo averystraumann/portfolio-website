@@ -26,6 +26,13 @@ h3 {
 }
 
 h4 {
+  font-size: 1.6rem;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+h5 {
+  font-size: 1.2rem;
   margin-top: 1%;
   margin-bottom: 1%;
 }
@@ -159,6 +166,25 @@ p {
 .fractal-image img {
   padding-left: 0%;
   padding-bottom: 0%;
+}
+
+.edu-container,
+.exp-container {
+  margin-bottom: 2.5rem;
+}
+
+.education hr {
+  border: solid 0.1rem #e5446d;
+  display: inline-block;
+  width: 75%;
+  margin-left: 1rem;
+}
+
+.experience hr {
+  border: solid 0.1rem #759aab;
+  display: inline-block;
+  width: 75%;
+  margin-left: 1rem;
 }
 
 #linkedin {
