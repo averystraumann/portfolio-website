@@ -1,16 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Avery Straumann</title>
     <link href="resources/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header>
-      <h1>Avery Straumann</h1>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">  <body>
+    <script src="resources/scripts/tabs.js" defer></script>
+    <script src="resources/scripts/book_flip.js" defer></script>
+    <script src="resources/scripts/open_project.js" defer></script>
+      <header>
+      <h3>Avery Straumann</h3>
       <nav>
         <ol class="nav-bar">
-          <a href="index.html"><li class="nav-element">Home</li></a>
+          <a href="#about"><li class="nav-element">About</li></a>
           <a href="projects.html"><li class="nav-element">Projects</li></a>
+          <a href="#skills"><li class="nav-element">Skills</li></a>
           <a href="education-experience.html"
             ><li class="nav-element">Education & Experience</li></a
           >
@@ -19,110 +24,513 @@
     </header>
 
     <main>
-      <div class="about">
-        <div class="about-info">
-          <h2>About Me</h2>
-          <h4>Hello, World!</h4>
+      <div class="about" id="about">
+          
+          <div style="display: inline-block">
+            <h1 class="typewriter">
+              hi, i'm avery </span>
+            </h1>
+          </div>
+          
+          <div class="scrapbook-section">
+            <image class="sticker" src="resources/images/stickers/star1.png" style="left: -5%; top: 15%; width: 2.5%;"/>
+            <image class="sticker" src="resources/images/stickers/star2.png" style="left: -15%; top: 30%; width: 2%;"/>
+            <image class="sticker" src="resources/images/stickers/star3.png" style="left: -5%; top: 45%; width: 2.5%;"/>
+            <image class="sticker" src="resources/images/stickers/star4.png" style="left: -15%; top: 60%; width: 2.5%;"/>
+            <image class="sticker" src="resources/images/stickers/star6.png" style="left: -5%; top: 75%; width: 2.5%;"/>
+
+            <image class="sticker" src="resources/images/stickers/star7.png" style="right: -5%; top: 15%; width: 2.5%;"/>
+            <image class="sticker" src="resources/images/stickers/star8.png" style="right: -15%; top: 30%; width: 2%;"/>
+            <image class="sticker" src="resources/images/stickers/star9.png" style="right: -5%; top: 45%; width: 2.5%;"/>
+            <image class="sticker" src="resources/images/stickers/star3.png" style="right: -15%; top: 60%; width: 2.5%;"/>
+            <image class="sticker" src="resources/images/stickers/star1.png" style="right: -5%; top: 75%; width: 2.5%;"/>
+            
+            <div class="scrapbook-container">
+              <img class="scrapbook-keyframe"
+                src="resources/images/book.png"
+                width="100%"
+                height="100%"/>
+              <div class="scrapbook-content active" id="0">   
+                  <div class="scrapbook-img-frame"   style="width: 40%; height: 60%;"">
+                    <img src="resources/images/frame.png" width="100%" height="100%" />
+                  </div>
+                <div class="scrapbook-img" style="  width: 30%; height: 45%;">
+                  <img src="resources/images/portfoliopic.jpg" width="100%" height="100%" />
+                </div>
+               
+
+                <div class="scrapbook-text">
+                  <p>
+                    Hello! My name is Avery, and welcome to my website! Here you can find information about my education, experience, and projects. Flip through this book to learn a bit more about me :D                     
+                  </p>
+                </div>
+                </div>
+
+              <div class="scrapbook-content" id="1">   
+                <div class="scrapbook-text" style="left: 10%; top: 25%; height: 60%;">
+                  <p>
+                    I'm in the second year of my Masters of Science of Computer Science at McGill University in the McGill Graphics Lab. I study physics based animation, specifically friction solving for rolling objects.
+                    
+                  </p>
+
+                </div>
+                  <div class="scrapbook-text" style="top: 25%;">
+                    <p>
+                      My other academic interests include computer graphics & rendering, game development, and software engineering/design. I'm also really interested in physical simulation of natural phenomena!
+                    </p>
+                  </div>
+              </div>
+              <div class="scrapbook-content" id="2">   
+                <div class="scrapbook-text" style="left: 10%; top: 25%; height: 60%;">
+                  <p>
+                    Outside of tech, some of my hobbies include playing bass, knitting, and hosting Venus Radio on CKUT 90.3 FM. I love music, games, art, and science, and am always looking for new ways to learn and explore!
+                    
+                  </p>
+
+                </div>
+                  <div class="scrapbook-text" style="top: 25%;">
+                    <p>
+                      I've also been interested in learning more about plant and animal biology and environmental science, and have been working on finding ways to use my technical skills to help with environmental conservation and sustainability.
+                    </p>
+                  </div>
+
+                </div>
+
+                <div class="scrapbook-content" id="3">   
+                <div class="scrapbook-text" style=" top: 25%; height: 40%;">
+                  <p>
+                    Thanks for checking out my bio! Keep scrolling to see some projects I've worked on/my other work experience, and feel free to reach out to chat!
+                    
+                  </p>
+
+                </div>
+
+
+                </div>
+                  
+              </div>
+
+
+              <div class="page-flip-buttons">
+                <button class="prev-page-button" title="PREVIOUS"></button>
+                <button class="next-page-button" title="NEXT"><img src="resources/images/arrow.png"></button>
+              </div>
+
+              
+
+            </div>    
+          </div>
+      </div>
+
+      <div class="stuff">
+        <div style="display: inline-block">
+            <h2 >
+              what i've been working on </span>
+            </h2>
+          </div>
+
+        <div class="tabs-section">
+            <div class="tabs">
+              <img class="scrapbook-keyframe"
+                  src="resources/images/notepad.png"
+                  width="100%"
+                  height="100%"/>
+
+              <div class="tabs-inner">
+                <div class="tabs-header" aria-label="education, experience, and projects">
+                  <button class="tab" tabindex="0" aria-selected="false">projects</button>
+                  <button class="tab" tabindex="-1" aria-selected="true">education</button>
+                  <button class="tab" tabindex="-1" aria-selected="false">experience</button>
+                </div>
+
+                <div class="tabs-content" id="Projects" tabindex="0">
+                  <h3>projects (see my <a href="https://github.com/averystraumann" target="_blank">github</a> for more!)</h3>
+                  <div class="projects">
+                    <div class="row">
+                      <div class="project-container border2" data-project="raytracer">
+                        <h3>Python Raytracer</h3>
+                        <img src="resources/images/raytracergalaxy.png" />
+                      </div>
+                      <div class="project-container border1" data-project="YGGDROWSIL">
+                        <h3>YGGDROWSIL</h3>
+                        <img src="resources/images/Screenshot 2024-04-17 121148.png" />
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="project-container border1" data-project="mesheditor">
+                        <h3>Mesh Editor</h3>
+                        <img src="resources/images/mesh.png" />
+                      </div>
+                      <div class="project-container border2" data-project="fluidsim">
+                        <h3>Fluid Sim</h3>
+                        <img src="resources/images/fluid.png" />
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tabs-content" id="Education" tabindex="0" hidden>
+                  <h3>education</h3>
+                  <div class="edu-container">
+          <h4>M.Sc. Computer Science - McGill University</h4>
+          <h5>2025 - 2027</h5>
+          <h5>Montreal, QC</h5>
+          <ul>
+            <li>
+              Second year thesis-based masters student in the McGill Graphics Lab under the supervision of Prof. Paul Kry.
+
+            </li>
+            <li>
+              My research is on phyics based animation for rigid bodies, and specifically I am working on improving contact friction solvers for rolling and curved objects.
+            </li>
+            
+            <li>
+              Some relevant courses include Computer Animation and Modern Computer Games
+            </li>
+          </ul>
+        </div>
+                  <div class="edu-container">
+          <h4>B.Sc. Computer Science - McGill University</h4>
+          <h5>2021 - 2025</h5>
+          <h5>Montreal, QC</h5>
+          <ul>
+            <li> 3.75 GPA</li>
+            <li>
+              Some relevant courses include Computer Graphics, Algorithms & Data Structures,
+              Robotics & Intelligent Systems, Software Design, and Operating
+              Systems
+            </li>
+            <li>
+              Awards: Tomlinson Engagement Award for Mentoring (x3), McGill
+              Entrance Scholarship
+            </li>
+            <li>
+              <a href="resources/Transcript_AVERYSTRAUMANN.pdf" target="_blank"
+                >See full transcript here</a
+              >
+              (Updated January 2024)
+            </li>
+          </ul>
+        </div>
+
+        <div class="edu-container">
+          <h4>Steinbrenner Highschool</h4>
+          <h5>2017 - 2021</h5>
+          <h5>Lutz, FL</h5>
+          <ul>
+            <li>4.0 GPA, ranked 3rd out of a class of about 760 students</li>
+            <li>
+              Positions: Vice President of Science National Honor Society,
+              Secretary of Math National Honor Society, Vice President of
+              Society of Women Engineers
+            </li>
+            <li>Test scores: 1520 SAT, 34 ACT</li>
+          </ul>
+        </div>
+                </div>
+                <div class="tabs-content" id="Experience" tabindex="0" hidden>
+                  <h3>experience</h3>
+                  <div class="exp-container">
+                    <h4>Software Engineer - Clean Meat Alliance</h4>
+                    <h5>May 2026-Present</h5>
+                    <h5>Montreal, QC</h5>
+                    <ul>
+                      <li>
+                        Developing a mobile game for the <a href="https://cleanmeatalliance.org" target="_blank">Clean Meat Alliance </a>using Three.js with the goal of raising money for sanctuary animals and alternative protein research. 
+                      </li>
+                      <li>
+                        Wrote scalable code in JavaScript to implement game mechanics and user interface, ensuring smooth gameplay and an engaging user experience.
+                        
+                      </li>
+                      <li>
+                        Created models in Blender and implement them in Three.js to create a visually appealing and interactive experience for users.
+                      </li>
+                      <li>
+                        Worked in a team to debug and optimize the game for performance and user experience.
+                      </li>
+                      
+                    </ul>
+                  </div>
+                    <div class="exp-container">
+                    <h4>Software Engineer - Cozy Cat Games</h4>
+                    <h5>2024-2025</h5>
+                    <h5>Montreal, QC</h5>
+                    <ul>
+                      <li>
+                        Developed multiple minigames for
+                        <a
+                          href="https://store.steampowered.com/app/2963260/Madame_Fifis_Bakery/"
+                          target="_blank"
+                          >Madame Fifi's Bakery</a
+                        >
+                        , a casual simulation game slated for release in September 2025,
+                        and currently at ~2000 Steam wishlist.
+                      </li>
+                      <li>
+                        Wrote efficient, maintainable code in C# within Unity, focusing on
+                        performance and user experience.
+                      </li>
+                      <li>
+                        Troubleshot and debugged complex gameplay issues, contributing to
+                        improved game stability.
+                      </li>
+                      <li>
+                        Collaborated with designers, producers, and artists to implement
+                        gameplay mechanics, ensuring seamless integration with game
+                        systems.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="exp-container">
+                    <h4>
+                      Undergraduate Researcher - McGill University's Centre for
+                      Intelligent Machines
+                    </h4>
+                    <h5>2024-2025</h5>
+                    <h5>Montreal, QC</h5>
+                    <ul>
+                      <li>
+                        Worked on replicating baselines for
+                        <a href="https://peract.github.io/" target="_blank">PerAct</a>, a
+                        transformer based architecture for robotic learning, at McGill's
+                        <a href="https://www.mcgill.ca/cim/" target="_blank">CIM</a>
+                      </li>
+                      <li>
+                        Conducted data collection and preprocessing to train the agent
+                        using demonstrations of robotic tasks & fill a replay buffer
+                      </li>
+                      <li>
+                        Collaborated with lab members to keep research efficient and
+                        organized.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="exp-container">
+                    <h4>
+                      Teaching Assistant & Computer Science Tutor - McGill University
+                    </h4>
+                    <h5>2022-2025</h5>
+                    <h5>Montreal, QC</h5>
+                    <ul>
+                      <li>
+                        Hosts weekly office hours to provide additional support to over
+                        400 students, leading to enhanced understanding and performance
+                      </li>
+                      <li>
+                        Provides code analysis and explanation of fundamental and
+                        theoretical concepts for 10+ computer science courses
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="exp-container">
+                    <h4>
+                      Autonomous Underwater Vehicle Software Engineer - McGill Robotics
+                    </h4>
+                    <h5>2023-2024</h5>
+                    <h5>Montreal, QC</h5>
+                    <ul>
+                      <li>
+                        Created python scripts to bridge communication between our code &
+                        the robot's external sensors, and implemented robotics concepts
+                        like pathfinding, pose estimation, and thruster control to produce
+                        advanced underwater movement and intelligence
+                      </li>
+                      <li>
+                        Led the creation of an accurate underwater simulation in Unity,
+                        producing an integral testing environment for our team
+                      </li>
+                      <li>
+                        Collaborated with a team of 8 developers using Git to regulate an
+                        agile development process
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+              </div>
+                </div>
+
+      
+
+              
+            <div class="project-modal-overlay" id="projectModalOverlay">
+              <div class="project-modal">
+                <button class="project-modal-close" aria-label="Close">&times;</button>
+                <h3 class="project-modal-title"></h3>
+                <p class="project-modal-desc"></p>
+                <p class="project-modal-techstack"></p>
+                <div class="project-modal-media"></div>
+                
+                <a class="project-modal-link" href="" target="_blank" rel="noopener">View project</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          </div>
+
+      <div class="skills" id="skills">
+        <div style="display: inline-block">
+          <h2 >
+            what i've been working with</span>
+          </h2>
+        </div>
+        <div class="carousel">
+        <div class="skills-group">
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/python.png" />
+            <h5>Python</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/java.png" />
+            <h5>Java</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/csharp.png" />
+            <h5>C#</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/c.png" />
+            <h5>C</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/html.png" />
+            <h5>HTML</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/css.png" />
+            <h5>CSS</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/git.png" />
+            <h5>Git</h5>
+          </div>
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/javascript.png" />
+            <h5>JavaScript</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/linux.png" />
+            <h5>Linux</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/unity.png" />
+            <h5>Unity</h5>
+          </div>
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/opengl.png" />
+            <h5>Open GL</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/react.png" />
+            <h5>React</h5>
+          </div>
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/js3.png" />
+            <h5>Three.js</h5>
+          </div>
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/blender.png" />
+            <h5>Blender</h5>
+          </div>
+        </div>
+
+        <div aria-hidden class="skills-group">
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/python.png" />
+            <h5>Python</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/java.png" />
+            <h5>Java</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/csharp.png" />
+            <h5>C#</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/c.png" />
+            <h5>C</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/html.png" />
+            <h5>HTML</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/css.png" />
+            <h5>CSS</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/git.png" />
+            <h5>Git</h5>
+          </div>
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/javascript.png" />
+            <h5>JavaScript</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/linux.png" />
+            <h5>Linux</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/unity.png" />
+            <h5>Unity</h5>
+          </div>
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/opengl.png" />
+            <h5>Open GL</h5>
+          </div>
+
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/react.png" />
+            <h5>React</h5>
+          </div>
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/js3.png" />
+            <h5>Three.js</h5>
+          </div>
+          <div class="skill-container">
+            <img src="resources/images/skill-icons/blender.png" />
+            <h5>Blender</h5>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div style="display: inline-block">
+          <h2 >
+            contact me!</span>
+          </h2>
           <p>
-            My name is Avery, and I am in my fourth year of Computer Science at
-            McGill University. I have really enjoyed learning about all aspects
-            of Computer Science, but particularly I'm interested in robotics,
-            computer graphics/animation, game development, and complexity
-            theory. Some of my other hobbies include listening to an unhealthy
-            amount of music (check out my
-            <a
-              href="https://open.spotify.com/user/averystraumann?si=45d2511eb9d6418f"
-              target="_blank"
-              >spotify</a
-            >
-            if you're interested), playing bass, watching movies (you can also
-            check out my
-            <a href="https://letterboxd.com/averyee/" target="_blank"
-              >letterboxd</a
-            >), and playing video games. On this site you can find my education
-            information, certifications, experience, and personal projects. If
-            you need to contact me, see the links below for some of my other
-            relevant websites/information.
+            email: averystraumann@icloud.com
+            
           </p>
-        </div>
-
-        <img
-          src="resources/images/pfp.jpg"
-          width="12%"
-          height="12%"
-          style="margin-top: 2%"
-        />
-      </div>
-
-      <div class="links">
-        <div class="link-container" id="linkedin">
-          <a href="https://www.linkedin.com/in/avery-straumann/" target="_blank"
-            >LinkedIn</a
-          >
-        </div>
-        <div class="link-container" id="github">
-          <a href="https://github.com/averystraumann" target="_blank">GitHub</a>
-        </div>
-        <div class="link-container" id="contact">
-          <a href="contact.html">Contact Me!</a>
+          linkedin: <a style="color: #cfcfcf" href="https://www.linkedin.com/in/avery-straumann/" target="_blank">avery straumann</a>
         </div>
       </div>
-      <h2>Skills</h2>
-      <div class="skills">
-        <div class="skill-container">
-          <img src="resources/images/skill-icons/python (1).png" />
-          <h5>Python</h5>
-        </div>
-
-        <div class="skill-container">
-          <img src="resources/images/skill-icons/java (2).png" />
-          <h5>Java</h5>
-        </div>
-
-        <div class="skill-container">
-          <img src="resources/images/skill-icons/c-sharp.png" />
-          <h5>C#</h5>
-        </div>
-
-        <div class="skill-container">
-          <img src="resources/images/skill-icons/c.png" />
-          <h5>C</h5>
-        </div>
-
-        <div class="skill-container">
-          <img src="resources/images/skill-icons/html.png" />
-          <h5>HTML</h5>
-        </div>
-
-        <div class="skill-container">
-          <img src="resources/images/skill-icons/css.png" />
-          <h5>CSS</h5>
-        </div>
-
-        <div class="skill-container">
-          <img src="resources/images/skill-icons/github.png" />
-          <h5>Git</h5>
-        </div>
-        <div class="skill-container">
-          <img src="resources/images/skill-icons/java-script.png" />
-          <h5>JavaScript</h5>
-        </div>
-
-        <div class="skill-container">
-          <img src="resources/images/skill-icons/linux-platform.png" />
-          <h5>Linux</h5>
-        </div>
-
-        <div class="skill-container">
-          <img src="resources/images/skill-icons/unity.png" />
-          <h5>Unity</h5>
-        </div>
-
-        <div class="skill-container">
-          <img src="resources/images/skill-icons/atom.png" />
-          <h5>React</h5>
-        </div>
-      </div>
+      
     </main>
 
     <footer></footer>

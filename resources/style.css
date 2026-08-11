@@ -1,10 +1,17 @@
+@media (prefers-reduced-motion: reduce) {
+  .skills-group {
+    animation: none;
+  }
+}
+
 body {
   margin-left: 7%;
   margin-right: 7%;
   font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: #333232;
-  color: #ffffe1;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 250;
+  background-color: #252525;
+  color: #cfcfcf;
 }
 
 header {
@@ -14,11 +21,13 @@ header {
 }
 
 h1 {
-  font-size: 2.8rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 2.8rem;
 }
 
 h3 {
@@ -38,69 +47,399 @@ h5 {
 }
 
 a {
-  color: #ffffe1;
+  color: #252525;
 }
 
 p {
   line-height: 1.5rem;
 }
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.1em solid #cfcfcf;
+  white-space: nowrap;
+  animation:
+    blinking 1s steps(1, end) infinite,
+    typing 2s steps(20, end) forwards;
+}
+
+.scrapbook-section {
+  container-type: inline-size;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+.scrapbook-content {
+  display: none;
+}
+
+.scrapbook-content.active {
+  display: block;
+}
+
+.scrapbook-keyframe {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.scrapbook-container {
+  position: relative;
+  width: 100%;
+}
+
+.scrapbook-img-frame {
+  position: absolute;
+  top: 15%;
+  left: 9%;
+
+  z-index: 2;
+}
+
+.scrapbook-img {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+
+  z-index: 1;
+  transform: rotate(-10deg);
+}
+
+.scrapbook-text {
+  position: absolute;
+  top: 25%;
+  left: 53%;
+  width: 37%;
+  height: 40%;
+  z-index: 2;
+  color: #252525;
+  overflow: auto;
+}
+
+.scrapbook-text p {
+  font-size: clamp(1.2rem, 3cqw, 1rem);
+  line-height: 1.3;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f152;
+}
+
+.next-page-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  bottom: 23%;
+  right: 10%;
+  width: 9%;
+  height: 9%;
+  transition: transform 0.3s ease;
+}
+
+.prev-page-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  bottom: 12%;
+  left: 10%;
+  width: 9%;
+  height: 9%;
+  transition: transform 0.3s ease;
+}
+
+.next-page-button img,
+.prev-page-button img {
+  display: block;
+  width: auto;
+  height: 100%;
+  /* object-fit: contain; */
+}
+.next-page-button:hover,
+.prev-page-button:hover {
+  transform: scale(1.1);
+}
+
+.sticker {
+  position: absolute;
+  image-rendering: pixelated;
+}
+
+@keyframes blinking {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #cfcfcf;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 .nav-bar {
   word-spacing: 5px;
   font-size: 1.25rem;
+  float: left;
 }
 
 .nav-element {
   display: inline;
 }
 
-.about {
+.projects {
   display: flex;
-  align-items: center;
-  gap: 2%;
-  margin-bottom: 2%;
-}
-
-.about-info {
-  display: flex;
-  justify-content: end;
-  flex-direction: column;
-}
-
-.links,
-.project-categories {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-
-.link-container {
-  height: 6rem;
-  width: 31%;
-  font-size: 1.6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  overflow: auto;
-}
-
-.skills {
-  display: flex;
-  gap: 4%;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
-.skills img {
-  width: 80px;
-  height: 80px;
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.project-container {
+  width: 100%; /* was 90% — that's what left gaps inside each cell */
+  box-sizing: border-box; /* keeps border + padding from pushing past 100% */
+  margin: 0;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-container.border1 {
+  border: 15px solid; /* Required for border-image */
+  padding: 15px;
+  border-image: url(images/projectframe1.png) fill 10 round;
+  image-rendering: pixelated;
+}
+
+.project-container.border2 {
+  border: 15px solid; /* Required for border-image */
+  padding: 15px;
+  border-image: url(images/projectframe2.png) fill 10 round;
+  image-rendering: pixelated;
+}
+
+.project-container img {
+  width: 100%;
+  height: auto;
+}
+
+.project-container:hover {
+  transform: scale(1.1);
+}
+
+.project-container h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  margin-left: 3%;
+  font-size: 1.3rem;
+}
+
+.project-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 100;
+}
+
+.project-modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.project-modal {
+  background: #252525;
+  border: 2px solid #cfcfcf;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 2rem;
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.2s ease;
+}
+.project-modal-overlay.active .project-modal {
+  transform: translateY(0);
+}
+
+.project-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #cfcfcf;
+  font-size: 1.8rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.project-modal-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-modal-media {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.project-modal-media-item {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.project-modal-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #759aab;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel:hover .skills-group {
+  animation-play-state: paused;
+}
+
+.tabs-section {
+  container-type: inline-size;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  min-width: 320px;
+  width: 85%;
+  height: 40%;
+}
+
+.tabs {
+  position: relative;
+  gap: 1em;
+  margin: 1em;
+  background-color: transparent;
+}
+
+.tabs-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tabs-header {
+  position: absolute;
+  top: 4%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1em;
+  margin: 0;
+  z-index: 3;
+}
+
+.tabs-content {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  width: 84%;
+  height: 70%;
+  padding: 1em;
+  overflow: auto;
+  z-index: 1;
+  color: #252525;
+  overflow-y: scroll;
+}
+.tabs-background {
+  display: block;
+  width: 60%;
+}
+
+.tab {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  background-color: #dcc9b6;
+  transition: border-color 0.3s ease;
+  color: #252525;
+  font: inherit;
+}
+
+.skills-group {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  animation: spin 30s infinite linear;
+  padding-right: 1em;
+}
+
+.skill-container img {
+  width: 75px;
+  height: 75px;
 }
 
 .skill-container {
   text-align: center;
+  flex: 0 0 3em;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
 }
 
 .gamedev .project {
