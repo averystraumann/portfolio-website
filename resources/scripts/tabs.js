@@ -19,7 +19,7 @@ const activateTab = (tab, i) => {
   tabsContent[i].removeAttribute("hidden");
   activeContent = tabsContent[i];
 
-  activeTab.focus();
+  // activeTab.focus();
 };
 
 activateTab(activeTab, 0);
