@@ -381,15 +381,16 @@ p {
 
 .tabs-header {
   position: absolute;
-  top: 4%;
+  top: 3%;
   left: 5%;
   width: 90%;
   display: flex;
   justify-content: right;
   align-items: center;
-  gap: 1em;
+  gap: clamp(0.1rem, 1cqw, 1em);
   margin: 0;
   z-index: 3;
+  flex-wrap: wrap;
 }
 
 .tabs-content {
@@ -398,7 +399,7 @@ p {
   left: 8%;
   width: 84%;
   height: 70%;
-  padding: 1em;
+  padding: 1rem;
   overflow: auto;
   z-index: 1;
   color: #252525;
@@ -410,11 +411,13 @@ p {
 }
 
 .tab {
-  padding: 0.5em 1em;
+  padding: clamp(0.2rem, 1cqw, 0.5rem) clamp(0.3rem, 1.5cqw, 0.5rem);
+  font-size: clamp(0.7rem, 2.2cqw, 1rem);
   cursor: pointer;
   background-color: #dcc9b6;
   transition: border-color 0.3s ease;
   color: #252525;
+
   font: inherit;
 }
 
@@ -446,30 +449,6 @@ p {
   }
 }
 
-.gamedev .project {
-  border: 3px solid #759aab;
-  border-radius: 10px;
-  padding-left: 2%;
-  padding-right: 2%;
-  margin-bottom: 0;
-}
-
-.graphics .project {
-  border: 3px solid #ef946c;
-  border-radius: 10px;
-  padding-left: 2%;
-  padding-right: 2%;
-  margin-bottom: 0;
-}
-
-.other .project {
-  border: 3px solid #e5446d;
-  border-radius: 10px;
-  padding-left: 2%;
-  padding-right: 2%;
-  margin-bottom: 0;
-}
-
 .project-category-header {
   display: flex;
   justify-content: start;
@@ -495,22 +474,6 @@ p {
   padding-top: 1%;
 }
 
-.fractal-images-container {
-  display: flex;
-  justify-content: center;
-  gap: 3%;
-}
-
-.fractal-image {
-  width: 45%;
-  height: 40%;
-  text-align: center;
-}
-.fractal-image img {
-  padding-left: 0%;
-  padding-bottom: 0%;
-}
-
 .edu-container,
 .exp-container {
   margin-bottom: 2.5rem;
@@ -528,42 +491,4 @@ p {
   display: inline-block;
   width: 75%;
   margin-left: 1rem;
-}
-
-#linkedin {
-  background-color: #759aab;
-}
-#github {
-  background-color: #ef946c;
-}
-
-#contact {
-  background-color: #e5446d;
-}
-
-#gamedev-link {
-  background-color: #759aab;
-}
-
-#graphics-link {
-  background-color: #ef946c;
-}
-
-#other-link {
-  background-color: #e5446d;
-}
-
-#jump {
-  text-align: center;
-}
-
-.gamedev h2 {
-  color: #759aab;
-}
-
-.graphics h2 {
-  color: #ef946c;
-}
-.other h2 {
-  color: #e5446d;
 }
