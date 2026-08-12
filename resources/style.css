@@ -287,8 +287,8 @@ p {
 }
 .project-modal {
   background: #252525;
-  border: 2px solid #cfcfcf;
-  border-radius: 10px;
+  /* border: 2px solid #cfcfcf;
+  border-radius: 10px; */
   max-width: 600px;
   width: 90%;
   max-height: 85vh;
@@ -298,6 +298,20 @@ p {
   transform: translateY(20px);
   transition: transform 0.2s ease;
 }
+
+.project-modal.border1 {
+  border: 15px solid; /* Required for border-image */
+  padding: 15px;
+  border-image: url(images/projectframe1.png) fill 10 round;
+  image-rendering: pixelated;
+}
+.project-modal.border2 {
+  border: 15px solid; /* Required for border-image */
+  padding: 15px;
+  border-image: url(images/projectframe2.png) fill 10 round;
+  image-rendering: pixelated;
+}
+
 .project-modal-overlay.active .project-modal {
   transform: translateY(0);
 }
